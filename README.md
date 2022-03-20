@@ -3,4 +3,4 @@
 - [Viikkoraportti 1](documentation/viikkoraportti1.md)
 
 ## Documentation
-- [Määrittelydokumentti](documentattion/määrittelydokumentti.md)
+- [Määrittelydokumentti](documentation/määrittelydokumentti.md)
