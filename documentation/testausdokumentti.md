@@ -1,4 +1,4 @@
 # Testausdokumentti
 
 ## Unittesting
-![unittest coverage](./1.4.2022_unittest_coverage.png)
+![unittest coverage](./week4_coverage_report.png)

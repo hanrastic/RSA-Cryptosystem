@@ -1,4 +1,4 @@
-# Weekly report 2
+# Weekly report 3
 ## What was done?
 - Finished functions for primality testing, prime number generation and RSA key generation
 - Finished testing for all functions done so far
