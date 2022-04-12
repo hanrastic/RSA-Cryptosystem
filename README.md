@@ -1,4 +1,4 @@
-https://github.com/<hanrastic>/<RSA-Cryptosystem>/workflows/<CI>/badge.svg
+![Github Actions](https://github.com/hanrastic/RSA-Cryptosystem/workflows/CI/badge.svg)
 
 # RSA-Cryptosystem
 ## Weekly reports
