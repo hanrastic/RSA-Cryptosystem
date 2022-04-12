@@ -20,10 +20,8 @@ jobs:
         run: pip install poetry
       - name: Install dependencies
         run: poetry install
-      - name: Move to right folder
-        run: cd src
       - name: Run tests
-        run: poetry run coverage run --branch -m pytest
+        run: cd src;poetry run coverage run --branch -m pytest
       - name: Coverage report
         run: poetry run coverage xml
       - name: Coverage report to Codecov
