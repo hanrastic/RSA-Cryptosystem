@@ -1,6 +1,6 @@
 # Weekly report 4
 ## What was done?
-- Finished functionality and testing for encryting and decrypt
+- Finished functionality and testing for encryting and decrypting
 - Core of the project is ready
 - Coded more tests (coverage 99%)
 

@@ -1,4 +1,5 @@
 ![Github Actions](https://github.com/hanrastic/RSA-Cryptosystem/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/hanrastic/RSA-Cryptosystem/branch/main/graph/badge.svg?token=38QC8NMU4G)](https://codecov.io/gh/hanrastic/RSA-Cryptosystem)
 
 # RSA-Cryptosystem
 ## Weekly reports
