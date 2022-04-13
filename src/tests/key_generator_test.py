@@ -32,4 +32,6 @@ class TestKeyGenerator(unittest.TestCase):
         
     def test_keys(self):
         self.assertEqual(self.public, self.keygenerator.public_key)
+        #self.assertEqual(True, self.keygenerator.is_prime(self.keygenerator.public_key))
         self.assertEqual(self.private, self.keygenerator.private_key)
+        #self.assertEqual(True, self.keygenerator.is_prime(self.keygenerator.private_key))
