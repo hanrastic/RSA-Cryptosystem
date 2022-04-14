@@ -23,11 +23,3 @@ Siirry poetry shelliin:
 ```bash
 poetry shell
 ```
-ja käynnistä sovellus:
-```bash
-py src/index.py
-```
-Windows-koneella:
-```bash
-python src/index.py
-```
