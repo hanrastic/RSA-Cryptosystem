@@ -1,7 +1,4 @@
 from builtins import ValueError, int, print
-from email import message
-
-from tomlkit import string
 from key_generator import KeyGenerator
 from encrypt_decrypt import Encrypt, Decrypt
 
@@ -31,9 +28,11 @@ def launch():
             bits = 4096
             break
         print("False input.", type(bits))
-    
+
+    print("\nGenerating keys...\n")
     kg = KeyGenerator(bits)
     public, private = kg.generate_keys()
+    print("Keys generated!")
 
     while True:
         print("\n[1] Encypt a message\n[2] Decrypt a message\n[3] Stop")

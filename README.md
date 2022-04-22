@@ -11,3 +11,17 @@
 ## Documentation
 - [Määrittelydokumentti](documentation/määrittelydokumentti.md)
 - [Testausdokumentti](documentation/testausdokumentti.md)
+- [Toteutusdokumentti](documentation/toteutusdokumentti.md)
+
+## Käyttöohje
+Download the project .zip file and navigate to the root file. 
+
+Download dependencies and activate the virtual environment
+```bash
+    poetry install;poetry shell
+```
+
+Navigate to right folder and run `app.py`
+```bash
+    cd src/app/;python3 app.py
+```

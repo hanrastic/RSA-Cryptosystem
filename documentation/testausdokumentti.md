@@ -9,17 +9,13 @@ Ohjelmassa on testattu kaikkia salauksen kannalta tärkeimpiä toimintoja, kuten
 ## Testauskattavuusrapotti
 Testauskattavuusraportti löytyy [![Codecovista](https://codecov.io/gh/hanrastic/RSA-Cryptosystem/branch/main/graph/badge.svg?token=38QC8NMU4G)](https://codecov.io/gh/hanrastic/RSA-Cryptosystem)
 
-## Miten ajaa testit?
-
+## Miten ajaa testit itse?
 Kloonaa repositorio. Siirry juurikansioon, ja aja:
 
 ```bash
-    cd src;coverage run --branch -m pytest; coverage html
+    poetry install;poetry shell
 ```
+
 ```bash
-poetry install
-```
-Siirry poetry shelliin:  
-```bash
-poetry shell
+    cd src;coverage run --branch -m pytest; coverage report -m
 ```
