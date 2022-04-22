@@ -1,18 +1,6 @@
 import math
 import random
 
-# This class provides utility to handle key-objects
-class Key:
-    def __init__(self, mod, exp):
-        self.modulus = mod
-        self.exponent = exp
-
-    def get_mod(self):
-        return self.modulus
-
-    def get_exp(self):
-        return self.exponent
-
 # This class provides functions and utilities to create proper public and private keys for RSA-system
 class KeyGenerator:
     def __init__(self, bits):
@@ -23,15 +11,16 @@ class KeyGenerator:
     # This function creates one set of public and private key
     def generate_keys(self):
         p, q = self.generate_primes()
-        mod = p * q                                         ##Calculate modulus
-        lambd = abs((p-1)*(q-1)) // math.gcd((p-1), (q-1))  ##Calculate lambda
-        self.e = 65537                                      ##Exponent for public key
-        exp = pow(self.e, -1, lambd)                        ##Calculate exponent for private key
-        self.public_key = Key(mod, self.e)                  ##Create public key
-        self.private_key = Key(mod, exp)                    ##Create private key
+        mod = p * q                                         ## Calculate modulus
+        lambd = abs((p-1)*(q-1)) // math.gcd((p-1), (q-1))  ## Calculate lambda using Charmichaels function
+        self.e = 65537                                      ## Exponent for public key
+        exp = pow(self.e, -1, lambd)                        ## Calculate exponent for private key
+        self.public_key = Key(mod, self.e)                  ## Create public key
+        self.private_key = Key(mod, exp)                    ## Create private key
         return self.public_key, self.private_key
 
     # This function generates and returns two different prime numbers
+    # implementation of Sieve of Eratosthenes
     def generate_primes(self):
         while True:
             p = random.getrandbits(self.bits // 2)
@@ -74,3 +63,17 @@ class KeyGenerator:
             else:
                 return False
         return True
+
+# This class provides utility to handle key-objects
+class Key:
+    def __init__(self, mod, exp):
+        self.modulus = mod
+        self.exponent = exp
+
+    # This function returns the modulus of the key
+    def get_mod(self):
+        return self.modulus
+
+    # This function returns the exponent of the key
+    def get_exp(self):
+        return self.exponent
