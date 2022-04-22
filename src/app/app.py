@@ -2,16 +2,16 @@ from builtins import ValueError, int, print
 from key_generator import KeyGenerator
 from encrypt_decrypt import Encrypt, Decrypt
 
-def __init__(self):
-        pass
+def __init__():
+    pass
 
 def launch():
     print("\n*****RSA Encrypter / Decrypter*****")
-    
+
     while True:
         print("Choose how many bit keys you want to use. "
-            "\nMore bits more protection "
-            "\n[1] 1024 bits\n[2] 2048 bits\n[3] 4096 bits")
+              "\nMore bits more protection "
+              "\n[1] 1024 bits\n[2] 2048 bits\n[3] 4096 bits")
         try:
             bits = int(input("> "))
         except ValueError:
@@ -30,8 +30,8 @@ def launch():
         print("False input.", type(bits))
 
     print("\nGenerating keys...\n")
-    kg = KeyGenerator(bits)
-    public, private = kg.generate_keys()
+    key_generator = KeyGenerator(bits)
+    public, private = key_generator.generate_keys()
     print("Keys generated!")
 
     while True:
@@ -46,7 +46,7 @@ def launch():
         if command1_from_user == 1:
             print("\nType in message to be encrypted:")
             message = input("> ")
-            msg_size= len(message.encode())
+            msg_size = len(message.encode())
             encrypted_message = Encrypt().encrypt_message(message, public)
             print(message, " in encrypted form ", encrypted_message)
         if command1_from_user == 2:

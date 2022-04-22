@@ -7,6 +7,7 @@ class KeyGenerator:
         self.bits = bits
         self.public_key = None
         self.private_key = None
+        self.e = None
 
     # This function creates one set of public and private key
     def generate_keys(self):
