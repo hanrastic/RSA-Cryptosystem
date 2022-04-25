@@ -13,6 +13,7 @@
 - [Määrittelydokumentti](documentation/määrittelydokumentti.md)
 - [Testausdokumentti](documentation/testausdokumentti.md)
 - [Toteutusdokumentti](documentation/toteutusdokumentti.md)
+- [Käyttöohje](documentation/käyttöohje.md)
 
 ## Käyttöohje
 Download the project .zip file and navigate to the root file. 

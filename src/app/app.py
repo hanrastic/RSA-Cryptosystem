@@ -32,6 +32,8 @@ def launch():
     print("\nGenerating keys...\n")
     key_generator = KeyGenerator(bits)
     public, private = key_generator.generate_keys()
+    encrypted_message = None
+
     print("Keys generated!")
 
     while True:
@@ -57,8 +59,11 @@ def launch():
                 print("****Please give proper input****\n")
                 continue
             if command2_from_user == 1:
-                decrypted_message = Decrypt().decrypt_message(encrypted_message, msg_size, private)
-                print("\nDecrypted message: ", decrypted_message)
+                if not encrypted_message == None:
+                    decrypted_message = Decrypt().decrypt_message(encrypted_message, msg_size, private)
+                    print("\nDecrypted message: ", decrypted_message)
+                else:
+                    print("\nEncrypted message could not be found, please try again")
             if command2_from_user == 2:
                 break
         if command1_from_user == 3:
