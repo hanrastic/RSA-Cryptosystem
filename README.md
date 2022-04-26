@@ -16,7 +16,7 @@
 - [Implementation Documentation](documentation/implementation_documentation.md)
 - [User Istructions](documentation/user_instructions.md)
 
-## Käyttöohje
+## Instructions
 Download the project .zip file and navigate to the root file. 
 
 Download dependencies and activate the virtual environment
