@@ -1,4 +1,4 @@
-## Käyttöohje
+## User instructions
 Download the project .zip file and navigate to the root file. 
 
 Download dependencies and activate the virtual environment
@@ -15,6 +15,6 @@ Navigate to right folder and run `app.py`
 - More bits provide more security but takes more recources and time to use
 2. Select 1. to encypt a message and type in preferred message
 3. Select 2. to decrypt a message
-## Hyväksytyt syötteet
+## Accepted inputs
 
 Accepted inputs are displayed in the project

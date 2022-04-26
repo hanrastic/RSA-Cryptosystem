@@ -1,4 +1,4 @@
-# Toteutusdokumentti
+# Implementation Documentation
 
 ## Structure of the program
 Core functionality is divided into 4 classes. 

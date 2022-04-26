@@ -1,4 +1,4 @@
-# Määrittelydokumentti
+# Project specification
 
 ## Project
 The project is a encryption program that uses RSA (Rivest–Shamir–Adleman) as the encryption method.

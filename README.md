@@ -3,17 +3,18 @@
 
 # RSA-Cryptosystem
 ## Weekly reports
-- [Viikkoraportti 1](documentation/viikkoraportti1.md)
-- [Viikkoraportti 2](documentation/viikkoraportti2.md)
-- [Viikkoraportti 3](documentation/viikkoraportti3.md)
-- [Viikkoraportti 4](documentation/viikkoraportti4.md)
-- [Viikkoraportti 5](documentation/viikkoraportti5.md)
+- [Weekly report 1](documentation/weekly_report1.md)
+- [Weekly report 2](documentation/weekly_report2.md)
+- [Weekly report 3](documentation/weekly_report3.md)
+- [Weekly report 4](documentation/weekly_report4.md)
+- [Weekly report 5](documentation/weekly_report5.md)
+- [Weekly report 6](documentation/weekly_report6.md)
 
 ## Documentation
-- [Määrittelydokumentti](documentation/määrittelydokumentti.md)
-- [Testausdokumentti](documentation/testausdokumentti.md)
-- [Toteutusdokumentti](documentation/toteutusdokumentti.md)
-- [Käyttöohje](documentation/käyttöohje.md)
+- [Project Specification](documentation/project_specification.md)
+- [Testing documentation](documentation/testing_documentation.md)
+- [Implementation Documentation](documentation/implementation_documentation.md)
+- [User Istructions](documentation/user_instructions.md)
 
 ## Käyttöohje
 Download the project .zip file and navigate to the root file. 
