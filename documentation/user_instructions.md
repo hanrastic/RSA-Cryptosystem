@@ -6,9 +6,9 @@ Download dependencies and activate the virtual environment
     poetry install;poetry shell
 ```
 
-Navigate to right folder and run `app.py`
+Navigate to right folder and run `index.py`
 ```bash
-    cd src/app/;python3 app.py
+    cd src/;python3 index.py
 ```
 
 1. Select the bit size for the key `1024`, `2048` or `4096`
