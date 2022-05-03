@@ -26,5 +26,5 @@ Download dependencies and activate the virtual environment
 
 Navigate to right folder and run `app.py`
 ```bash
-    cd src/app/;python3 app.py
+    cd src/;python3 index.py
 ```
