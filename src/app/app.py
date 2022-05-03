@@ -37,7 +37,7 @@ def launch():
     print("Keys generated!")
 
     while True:
-        print("\n[1] Encypt a message\n[2] Decrypt a message\n[3] Stop")
+        print("\n[1] Encrypt a message\n[2] Decrypt a message\n[3] Show generated keys\n[4] Stop")
 
         try:
             command1_from_user = int(input("> "))
@@ -67,6 +67,10 @@ def launch():
             if command2_from_user == 2:
                 break
         if command1_from_user == 3:
+            print("Public key: ", public.get_exp(),", ",public.get_mod())
+            print("Private key: ", private.get_exp(),", ", private.get_mod())
+            print(private.get_mod() == public.get_mod())
+        if command1_from_user == 4:
             break
 
 launch()
